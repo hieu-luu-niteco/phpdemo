@@ -1,4 +1,6 @@
 <?php
+var_dump($_SERVER);
+
 $dbhost = $_SERVER['RDS_HOSTNAME'];
 $dbport = $_SERVER['RDS_PORT'];
 $dbname = $_SERVER['RDS_DB_NAME'];
