@@ -14,8 +14,8 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']))
 	if( empty($name) || empty($email) || empty($phone) ) {
 		return false;   
 	}
-	$mail = new Email('smtp.gmail.com', 587);
-	$mail->setProtocol(Email::SSL)
+	$mail = new Email('in-v3.mailjet.com', 587);
+	$mail->setProtocol(Email::TLS)
 		->setLogin(SMTP_PRIMARY_EMAIL, SMTP_PRIMARY_PASSWORD)
 		->setFrom('sender@example.com')
 		->setSubject('New contact')
