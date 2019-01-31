@@ -33,9 +33,6 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']))
 	echo 'An error has occurred. Please check the logs below:' . PHP_EOL;
 	print_r($mail->getLogs());
 }else{
-	?>
-	
-
-<?php
+	echo "nothing";
 }
 ?>
