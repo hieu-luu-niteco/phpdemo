@@ -15,7 +15,7 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']))
 		return false;   
 	}
 	$mail = new Email('smtp.gmail.com', 587);
-	$mail->setProtocol(Email::TLS)
+	$mail->setProtocol(Email::SSL)
 		->setLogin(SMTP_PRIMARY_EMAIL, SMTP_PRIMARY_PASSWORD)
 		->setFrom('sender@example.com')
 		->setSubject('New contact')
